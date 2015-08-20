@@ -47,3 +47,5 @@ that ::WideUtil can handle wide (full-width) Unicode characters, while
 =head1 SEE ALSO
 
 L<Text::ANSI::NonWideUtil>
+
+L<Text::WideChar::Util>
