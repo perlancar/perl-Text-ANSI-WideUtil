@@ -30,4 +30,4 @@ our $re = $Text::ANSI::BaseUtil::re;
 
 =head1 FUNCTIONS
 
-# INSERT_BLOCK_FROM_MODULE: lib/Text/ANSI/Util.pm pod_wide_functions
+# INSERT_BLOCK_FROM_MODULE: Text::ANSI::Util pod_wide_functions
