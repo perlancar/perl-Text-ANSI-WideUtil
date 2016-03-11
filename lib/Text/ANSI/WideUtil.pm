@@ -18,7 +18,6 @@ our @EXPORT_OK = qw(
                        ta_mbswidth_height
                        ta_mbtrunc
                        ta_mbwrap
-                       ta_trunc
                );
 
 use Text::ANSI::BaseUtil ();
@@ -106,7 +105,7 @@ Like C<ta_wrap()>, but it uses C<ta_mbswidth()> to determine visual width
 instead of C<ta_length()>.
 
 Performance: ~300/s on my Core i5 1.7GHz laptop for a ~1KB of text (with zero to
-moderate amount of color codes). As a comparison, Text::WideChar::Util's
+moderate amount of color codes). As a comparison, L<Text::WideChar::Util>'s
 mbwrap() can do about 650/s.
 
 =head2 ta_mbsubstr($text, $pos, $len[ , $replacement ]) => STR
@@ -119,8 +118,9 @@ width, not number of characters.
 
 =head2 How do I truncate string based on number of characters instead of columns?
 
-You can simply use C<ta_trunc()> even on text containing wide characters.
-ta_trunc() uses Perl's length() which works on a per-character basis.
+You can simply use C<ta_trunc()> from L<Text::ANSI::Util> even on text
+containing wide characters. C<ta_trunc()> uses Perl's C<length()> which works on
+a per-character basis.
 
 
 =head1 SEE ALSO
